@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/learnjdbc"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 如果使用映射文件的话，映射文件指的是每个dao独立的映射文件-->
+    <mappers>
+        <mapper resource="com/hanfx/dao/UserDao.xml"/>
+    </mappers>
+
+    <!-- 如果使用注解的话，此处应该使用class属性指定被注解的dao全限定类名 -->
+<!--    <mappers>-->
+<!--        <mapper class="com.hanfx.dao.UserDao"/>-->
+<!--    </mappers>-->
+</configuration>

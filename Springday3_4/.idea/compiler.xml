@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring3_04AOP_Anno" />
+        <module name="Spring3_01account" />
+        <module name="Spring3_02proxy" />
+        <module name="Spring4_02AOP_TX_XMl" />
+        <module name="Spring4_01Jdbctemplate" />
+        <module name="Spring3_03AOP" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
